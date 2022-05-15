@@ -5,7 +5,8 @@ function StopWatchCreate() {
 var start = StopWatchCreate();
 
 function elpasedTime(start) {
-  return new Date().getTime() - start;
+  var now = new Date().getTime();
+  return (now - start);
 }
 
 console.log(elpasedTime(start));
